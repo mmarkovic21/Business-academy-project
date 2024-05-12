@@ -1,0 +1,471 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Apr 12, 2024, 4:13:00 PM
+    Author     : Marija
+*/
+
+/*  POCETAK CSS-A KOJI JE UVEK OBAVEZAN */
+html {
+    font-size: 10px; /* relativna vrednost jednog rem-a  */
+}
+
+body {
+    font-size: 1.4rem; /*   14px    */
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgba(29, 49, 78, 1);
+}
+
+* {
+    box-sizing: border-box;
+    -web-kit-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    max-width: 100%;    /*  da se sirina slike postavi na 100% elementa u kojem se nalazi   */
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto; /*    da bismo centrirali kontejner    */
+}
+
+.sadrzaj{
+    max-width: 1180px;
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+
+/*main {
+    height: 100vh;
+
+}*/
+
+header {
+    background-color: rgba(29, 49, 78, 1);
+    position: fixed;
+    top: 0;
+    left: 10;
+    width: 1440px;
+    margin: 0 auto;
+
+}
+
+header .header-logo {
+    float: left;
+    padding: 2.6rem 0;
+}
+
+header .header-right-part {
+    float: right;
+    padding: 2.3rem 0;
+}
+
+header .header-right-part p{
+    text-align: right;
+    color: rgba(205, 217, 235, 0.54);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+
+header .header-right-part .navigation-manu li{
+    float: left;
+    list-style: none;
+    margin-right: 7.1rem;
+}
+header .header-right-part .navigation-manu li:last-of-type{
+    margin-right: 0;
+}
+
+header .header-right-part .navigation-manu li a{
+    color: rgba(205, 217, 235, 1);
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+header .header-right-part .navigation-manu li a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+footer {
+    background-color: rgba(29, 49, 78, 1);
+}
+
+footer .footer-left {
+    margin-top: 5.5rem;
+    float: left;
+    width: calc(100% / 12 * 3);
+}
+
+footer .footer-left .footer-text{
+    padding-bottom: 6.7rem;
+    margin-top: 3.6rem;
+    color: rgba(205, 217, 235, 1);
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+}
+
+footer .footer-right{
+    float: right;
+    width: calc(100% / 12 * 7);
+    padding-top: 5.8rem;
+}
+
+
+footer .footer-right .footer-navigation li{
+    list-style: none;
+    float: left;
+    margin-right: 6.2rem;    
+    margin-top: 1rem;
+    
+}
+
+footer .footer-right .footer-navigation li a{
+    color: rgba(205, 217, 235, 1);
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+footer .footer-right .footer-navigation li a:hover{
+    color: #FFF;
+}
+
+footer .footer-right .footer-social{
+    float: right;
+}
+
+footer .footer-right .footer-social a{
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    width: 3.2rem;
+    height: 3.2rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    margin-right: 1.3rem;
+    margin-bottom: 6.9rem;
+}
+
+footer .copyright {
+    color: rgba(205, 217, 235, 0.54);
+    font-size: 1.2rem;
+    line-height: 5rem;
+    text-align: right;
+}
+
+.lead-section {
+    margin-top: 9.33rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding: 17.67rem 0 17rem;
+}
+
+.lead-section .text-part{
+    line-height: 3.2rem;
+    font-size: 2.8rem;
+    margin-bottom: 1.4rem;
+}
+
+.lead-section .title-part{
+    font-weight: 600;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    margin-bottom: 2.3rem;
+    margin-top: 0;
+}
+
+.lead-section .text-description-part {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 5.1rem;
+    margin-top: 0;
+}
+
+.lead-section .register-part {
+    width: 13.2rem;
+    height: 5rem;
+    padding: 1.3rem 3.2rem;
+    background-color: rgba(245, 245, 245, 0.9);
+    color: rgba(29, 49, 78, 1);
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+.news {
+    background-color: rgba(241, 246, 255, 1);
+    padding: 5.5rem 0 13.3rem;
+}
+
+.news .news-main-title{
+    text-align: center;
+    margin-bottom: 3.8rem;
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 5rem;
+    color: rgba(29, 49, 78, 0.8);
+}
+
+.news .news-item {
+    margin-top: 0;
+    float: left;
+    width: calc(100% / 12 * 4);
+}
+
+.new .news-img{
+    margin-bottom: 0.9rem;
+}
+/*
+.new .news-img:hover{
+    background-image: linear-gradient(to bottom, rgba(29, 49, 78, 0.7), rgba(29, 49, 78, 0.7));
+}*/
+
+.news .news-date{
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: rgba(29, 49, 78, 0.8);
+    margin-bottom: 0.3rem;
+}
+
+.news .news-title a{
+    color: rgba(29, 49, 78, 1);
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    text-transform: initial;
+}
+
+.news .news-short-description {
+    line-height: 2.1rem;
+    margin-bottom: 2.6rem;
+}
+
+.news .news-more{
+    color: rgba(29, 49, 78, 1);
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+.main-lead-about {
+    text-align: center;
+    padding: 12.87rem 0 8.6rem;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 9.33rem;
+}
+
+.main-lead-about .lead-title-about {
+    font-weight: 600;
+    font-size: 5.6rem;
+    line-height: 6rem;
+    margin-bottom: 2.2rem;
+}
+
+.main-lead-about .lead-text-about {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 8.6rem;
+}
+
+.member {
+    float: left;
+    width: calc(100%/12*6);
+    color: rgba(173, 184, 199, 1);
+}
+
+.member p{
+    color: rgba(29, 49, 78, 1);
+}
+
+.member .member-name {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+}
+
+.member .member-position{
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    line-height: 2.1rem;
+    font-weight: 400;
+}
+
+.member .member-description{
+    line-height: 2.1rem;
+    margin-bottom: 3.6rem;
+}
+
+.member .member-about {
+    text-transform: uppercase;
+    line-height: 2.1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+.member .member-about-text {
+    margin-bottom: 6.9rem;
+    line-height: 2.1rem;
+}
+
+.member-part {
+    padding: 9.87rem 0 7rem;
+
+}
+
+.member-info {
+    float: right;
+    width: calc(100%/12*4);
+    text-align: center;
+}
+
+.member-info .member-img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2.1rem;
+}
+
+.member-info .member-mail {
+    display: block;
+    margin: 0 auto;
+    line-height: 2.1rem;
+    color: rgba(173, 184, 199, 1);
+    text-transform: lowercase;
+    margin-bottom: 1.2rem;
+}
+
+.member-info .member-tel {
+    color: rgba(29, 49, 78, 1);
+    font-size: 2rem;
+    line-height: 2.1rem;
+}
+
+.register-lead {
+    margin-top: 9.33rem;
+    padding: 13.87rem 0 17.13rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.register-lead .register-lead-title {
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    font-size: 5.6rem;
+    line-height: 6rem;
+}
+
+.register-lead .register-lead-text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.form-section {
+    padding: 9.87rem 0 18.6rem;
+}
+
+.form-text {
+    float: left;
+    width: calc(100%/12*6);
+
+}
+
+.form-text .form-text-title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-bottom: 2.5rem;
+    color: rgba(173, 184, 199, 1);
+}
+
+.form-text .form-text-body {
+    margin-bottom: 3.5rem;
+    line-height: 2.1rem;
+    color: rgba(29, 49, 78, 1);
+}
+
+.form-text .form-list {
+    padding: 0 1.5rem; /* da bi pomerili listu uz levu ivicu kontejnera, treba da u okviru ul taga setijemo padding*/
+}
+
+.form-text .form-list a{
+    color: rgba(173, 184, 199, 1);
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    text-transform: initial;
+    list-style: circle;
+}
+
+.form-text .form-list li::marker{
+    color: rgba(173, 184, 199, 1);
+}
+
+.form-template {
+    float: right;
+    width: calc(100%/12*4);
+
+}
+
+.form-template .form-label {
+    line-height: 2.1rem;
+    color: rgba(173, 184, 199, 1);
+    text-transform: uppercase;
+}
+
+.form-template  input{
+    width: 36.3rem;
+    height: 5.5rem;
+    color: rgba(205, 217, 235, 1);
+    line-height: 2.1rem;
+    border: 1px solid rgba(205, 217, 235, 1);
+    margin-left: 3rem;
+    margin-bottom: 2.6rem;
+    margin-top: 1rem;
+    
+}
+
+.form-template label{
+    margin-left: 3rem;
+
+}
+
+.form-template input::placeholder{
+    padding-left: 2rem;
+    color: rgba(205, 217, 235, 1);
+}
+
+.form-template .form-buttom {
+    margin-left: 3rem;
+    background-color: rgba(29, 49, 78, 1);
+    border: 1px solid rgba(205, 217, 235, 1);
+    width: 36.3rem;
+    height: 5rem;
+    text-transform: uppercase;
+    color: rgba(245, 245, 245, 0.9);
+}
+
+.form-template .form-buttom:hover{
+    color: rgba(245, 245, 245, 1);
+}
